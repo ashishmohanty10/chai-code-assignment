@@ -80,7 +80,10 @@ export default function Randomeuser() {
             <div className="border-t border-b  border-slate-900/10 flex items-center justify-center py-4 gap-8">
               <div className="flex items-center  gap-2">
                 <div className="w-[22px] h-[22px] rounded-full bg-black flex items-center justify-center">
-                  <a href={data.data.location.country}>
+                  <a
+                    target="_blank"
+                    href={`https://www.google.com/maps/place/${data.data.location.country}/@44.1803743,18.2707248,639544m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47571ddff2898095:0x55e50ea3723865d!8m2!3d44.016521!4d21.005859!16zL20vMDc3cW4?entry=ttu`}
+                  >
                     <IoLocationOutline className="text-white" />
                   </a>
                 </div>
@@ -89,7 +92,9 @@ export default function Randomeuser() {
 
               <div className="flex items-center  gap-2">
                 <div className="w-[22px] h-[22px] rounded-full bg-black flex items-center justify-center">
-                  <HiOutlinePhone className="text-white" />
+                  <a target="_blank" href="https://www.whatsapp.com/">
+                    <HiOutlinePhone className="text-white" />
+                  </a>
                 </div>
                 <p className="text-[9px] font-dmSans">Call me</p>
               </div>
