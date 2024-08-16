@@ -18,4 +18,4 @@
 
 This is my submission for machine coding round-2 hosted by chaicode. Thank you for awesome react questions, it was fun building it.
 
-Link to Hosted Site : https://chaicode-reactjs-assignment-round2.netlify.app/
+Link to Hosted Site : https://chaicode-machine-coding-round2.vercel.app/random-user
