@@ -80,7 +80,9 @@ export default function Randomeuser() {
             <div className="border-t border-b  border-slate-900/10 flex items-center justify-center py-4 gap-8">
               <div className="flex items-center  gap-2">
                 <div className="w-[22px] h-[22px] rounded-full bg-black flex items-center justify-center">
-                  <IoLocationOutline className="text-white" />
+                  <a href={data.data.location.country}>
+                    <IoLocationOutline className="text-white" />
+                  </a>
                 </div>
                 <p className="text-[9px] font-dmSans">Location</p>
               </div>

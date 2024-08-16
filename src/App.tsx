@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/random-user" />} />
+        {/* <Route path="/" element={<Navigate to="/random-user" />} /> */}
 
         <Route path="/random-user" element={<Randomeuser />} />
 
