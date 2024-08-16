@@ -11,7 +11,7 @@ import { RiLoader2Line } from "react-icons/ri";
 export default function Randomeuser() {
   const [data, setData] = useState<randomUser>(defaultUserData);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const delay = new Promise((resolve) => setTimeout(resolve, 20000));
+  const delay = new Promise((resolve) => setTimeout(resolve, 2000));
 
   const handleFetch = async () => {
     setIsLoading(true);
@@ -21,7 +21,6 @@ export default function Randomeuser() {
         `https://api.freeapi.app/api/v1/public/randomusers/user/random`
       );
       const fetchedData = await response.json();
-      console.log("--data", fetchedData);
       setData(fetchedData);
     } catch (error) {
       alert("Error while Fetching");
@@ -163,6 +162,7 @@ export default function Randomeuser() {
               href={"https://chaicode.com/"}
               target="_blank"
               className="absolute bottom-3 right-4"
+              rel="noopener noreferrer"
             >
               <img src={Chaicode} alt="" className="w-[60px] h-[62px]" />
             </a>

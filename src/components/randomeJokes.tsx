@@ -38,6 +38,7 @@ export default function RandomeJokes() {
 
         setData(result);
       } catch (error) {
+        alert("Error while Fetching ");
         console.error("Error fetching joke:", error);
       } finally {
         setIsLoading(false);
@@ -88,7 +89,7 @@ export default function RandomeJokes() {
                 </div>
               </div>
 
-              <BsThreeDots className="text-[#A0A0A0]" />
+              <BsThreeDots className="text-[#A0A0A0] cursor-pointer" />
             </div>
 
             {/* Jokes */}
@@ -136,6 +137,7 @@ export default function RandomeJokes() {
         href={"https://chaicode.com/"}
         target="_blank"
         className="absolute bottom-4 right-5"
+        rel="noopener noreferrer"
       >
         <img src={Chaicode} alt="" className="w-[60px] h-[62px]" />
       </a>
